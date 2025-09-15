@@ -121,6 +121,10 @@
             <name>AlessioDP</name>
             <url>https://repo.alessiodp.com/releases/</url>
         </repository>
+        <repository>
+            <id>nexo-releases</id>
+            <url>https://repo.nexomc.com/releases/</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -133,7 +137,7 @@
         <dependency>
             <groupId>me.clip</groupId>
             <artifactId>placeholderapi</artifactId>
-            <version>2.11.2</version>
+            <version>2.11.6</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -158,6 +162,18 @@
             <artifactId>api-itemsadder</artifactId>
             <version>3.6.1</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.nexomc</groupId>
+            <artifactId>nexo</artifactId>
+            <version>1.8.0</version>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>dev.triumphteam</groupId>
+                    <artifactId>triumph-gui</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.github.oraxen</groupId>
